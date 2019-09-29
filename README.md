@@ -65,8 +65,12 @@ This documentation assumes that you already have access to Google Cloud and mone
 ### 1. Go to https://console.cloud.google.com/compute/ 
 Log in to your Google account if you haven't already.
 
+![Step](Images/Step1.PNG)
+
 ### 2. Create a new Instance 
 Press the "Create Instance" button at the top of the page.
+
+![Step](Images/Step2.PNG)
 
 Name your instance something appropriate.
 
@@ -74,11 +78,16 @@ In the "machine type" field, select "f1 micro".
 
 In the "Boot Disk" box, select "change", then select "Ubuntu 18.04 LTS".
 
+![Step](Images/Step3.PNG)
+
 Under "Firewall", check the box next to "Allow HTTP Traffic".
 
 Select "Create" and wait for your VM to start up.
 
 ### 3. SSH into your VM
+
+![Step](Images/Step4.PNG)
+
 Select "SSH" or choose "Open in Browser Window" from the dropdown. If you are presented by a black screen, try again until you see a "Connecting" message displayed.
 
 ### 4. Install necessary software
@@ -92,6 +101,8 @@ source venv/bin/activate
 pip install Flask
 ```
 
+![Step](Images/Step6.PNG)
+
 This installs python and all its accoutrements, creates a virtual environment, and installs Flask into that environment.
 
 ### 5. Clone this git repository
@@ -101,6 +112,8 @@ Run the following command:
 git clone https://github.com/ocobble/Number-Generator.git
 ```
 
+![Step](Images/Step7.PNG)
+
 ### 6. Add correct firewall settings
 Access the main hamburger menu in the upper-right-hand corner of the google cloud console.
 
@@ -109,6 +122,8 @@ Go to VPC Network -> Firewall Rules.
 Select "Create Firewall Rule".
 
 Name your new rule.
+
+![Step](Images/Step8.PNG)
 
 Enter "http-server" in the "Target tags" box.
 
@@ -127,6 +142,8 @@ There should be an ip address already in use by your VM.
 
 Change the "Type" dropbox from "Ephemeral" to "Static" and put an appropriate name in the box when it comes up.
 
+![Step](Images/Step9.PNG)
+
 ### 6. Start Your Web Server
 
 Open a tmux session in your virtual machine with the command `tmux new`. If you no longer see `(venv)` before your prompt, use the command `source venv/bin/activate` to get it back. This creates a virtual terminal that will keep running after you log out of your instance.
@@ -135,12 +152,16 @@ Navigate to `Number-Generator/pythonVM/`.
 
 Run the command `python randomGenerator.py`. This should start the server, and the terminal will not be able to accept any more commands.
 
+![Step](Images/Step10.PNG)
+
 Exit the tmux session while keeping it running in the background by pressing `Ctrl-b`, then `d`. You should be back at a notmal-looking terminal.
 
 Log out of your VM.
 
 ### 7. Test
 The URL to reach your web server will be `http://YOUR.STATIC.EXTERNAL.IP:5000/`. Test it yourself by typing that into a browser.
+
+![Step](Images/Step11.PNG)
 
 
 ## Python App Engine Documentation

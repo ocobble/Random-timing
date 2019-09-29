@@ -86,7 +86,7 @@ Run the following commands:
 
 ```
 sudo apt update
-sudo apt install python3 python3-pip python3-venv
+sudo apt-get install python3 python3-pip python3-venv -y
 python3 -m venv venv
 source venv/bin/activate
 pip install Flask
@@ -123,11 +123,9 @@ Click create.
 ### 7. Get a Static External IP
 Click "External IP addresses" in the sidebar of the "VPC Network" view.
 
-Click "Reserve Static Address".
+There should be an ip address already in use by your VM.
 
-Name the static address, and select the virtual machine we are working with under "Attached to".
-
-Click "Reserve".
+Change the "Type" dropbox from "Ephemeral" to "Static" and put an appropriate name in the box when it comes up.
 
 ### 6. Start Your Web Server
 
@@ -142,7 +140,7 @@ Exit the tmux session while keeping it running in the background by pressing `Ct
 Log out of your VM.
 
 ### 7. Test
-The URL to reach your web server will be `http://YOUR.STATIC.EXTERNAL.IP:5000/`. Test it yourself by typing that into a browser, or use the automated test method described in the main README.
+The URL to reach your web server will be `http://YOUR.STATIC.EXTERNAL.IP:5000/`. Test it yourself by typing that into a browser.
 
 
 ## Python App Engine Documentation

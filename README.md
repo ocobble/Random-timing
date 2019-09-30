@@ -58,6 +58,41 @@ Now, when you visit http://{your-external-ip-address} you should see a random nu
 ![Firewall](Images/number.PNG)
 
 ## Java App Engine Documentation
+This documentation assumes that you already have access to Google Cloud and money to spend on a virtual machine instance.
+
+### 1. Go to https://console.cloud.google.com/appengine/ 
+Log in to your Google account if you haven't already.
+Create a new app engine
+
+![Step](Images/app_step1.png)
+
+### 2. Activate cloud shell and open java tutorial 
+
+
+![Step](Images/app_step2.png)
+
+### 3. create new app engine
+Run the following commands:
+
+```
+rm -rf appengine-try-java
+git clone https://github.com/GoogleCloudPlatform/appengine-try-javapython3 -m venv venv
+```
+
+This will erase an old app engine and then create a new app engine that ready to use
+
+### 4. make and java file and html file
+generate a random number on java file and then make a html file to show it
+
+```
+vim src/main/java/myapp/DemoServlet.java
+vim src/main/webapp/index.html
+```
+
+### 5. Test
+deploy app engine and then test the URL
+
+![Step](Images/app_step2.png)
 
 ## Python VM Documentation
 This documentation assumes that you already have access to Google Cloud and money to spend on a virtual machine instance.

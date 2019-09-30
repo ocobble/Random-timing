@@ -92,7 +92,7 @@ vim src/main/webapp/index.html
 ### 5. Test
 deploy app engine and then test the URL
 
-![Step](Images/app_step2.png)
+![Step](Images/app_step3.png)
 
 ## Python VM Documentation
 This documentation assumes that you already have access to Google Cloud and money to spend on a virtual machine instance.

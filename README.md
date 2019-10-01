@@ -174,34 +174,35 @@ Log in to your Google account or create one if you have not before, then click "
 ### 2. Create a new project
 Create a new project, choose what name it, and chose what region you want it to be based in.
 
-![Step](Images/make_a_project)
+![Step](Images/make_a_project.png)
 
 ![Step](Images/name_a_project.png)
 
 ### 3. Create an application
 Here is where I went through the app engine's provided 'hello world' tutorial, chose the language you want (in our case, Python)
 
-(image to be added)
+![Step](Images/beginning_of_tutorial.png)
 
 ### 4. Go through the tutorial
 Start by cloning Google's github repository for this project and going into the correct repository
 
-(image here of cloining repository)
+![Step](Images/cloning.png)
 
 then go through the steps to get into their 'main' program and modify it slightly to return a random number rather than "hello world"
 
-(image of modified code here)
+![Step](Images/modifications_to_code.png)
 
 Run the "testing your app" section of the tutorial shown in the previous image on the command line.
 
 This should get you to the point of a test website displaying a random number
 
-(image of the temp site here)
+![Step](Images/temp_website.png)
 
 Deploy your app engine using the commands provided by the tutorial
 
-(image of commands given by tutorial)
-(images of it on the command line)
+![Step](Images/deploy_step.PNG)
+
+![Step](Images/finished.png)
 
 ### 5. Visit your new website!
 At this point, you should be able to visit the website provided to you at the end of the tutorial, congradulations!
@@ -210,5 +211,12 @@ At this point, you should be able to visit the website provided to you at the en
 ## Testing code
 inputs: https://sooners.sharepoint.com/sites/TeamGlasses/Shared%20Documents/Experiment/random-timing-test.txt
 
+![Step](Images/running_the_timing_code.png)
+
 output:
-(images of outputs here)
+
+![Step](Images/results(1).png)
+
+![Step](Images/results(2).png)
+
+![Step](Images/results(3).png)

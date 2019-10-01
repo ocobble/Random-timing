@@ -58,41 +58,6 @@ Now, when you visit http://{your-external-ip-address} you should see a random nu
 ![Firewall](Images/number.PNG)
 
 ## Java App Engine Documentation
-This documentation assumes that you already have access to Google Cloud and money to spend on a virtual machine instance.
-
-### 1. Go to https://console.cloud.google.com/appengine/ 
-Log in to your Google account if you haven't already.
-Create a new app engine
-
-![Step](Images/app_step1.png)
-
-### 2. Activate cloud shell and open java tutorial 
-
-
-![Step](Images/app_step2.png)
-
-### 3. create new app engine
-Run the following commands:
-
-```
-rm -rf appengine-try-java
-git clone https://github.com/GoogleCloudPlatform/appengine-try-javapython3 -m venv venv
-```
-
-This will erase an old app engine and then create a new app engine that ready to use
-
-### 4. make and java file and html file
-generate a random number on java file and then make a html file to show it
-
-```
-vim src/main/java/myapp/DemoServlet.java
-vim src/main/webapp/index.html
-```
-
-### 5. Test
-deploy app engine and then test the URL
-
-![Step](Images/app_step3.png)
 
 ## Python VM Documentation
 This documentation assumes that you already have access to Google Cloud and money to spend on a virtual machine instance.
@@ -200,3 +165,48 @@ The URL to reach your web server will be `http://YOUR.STATIC.EXTERNAL.IP:5000/`.
 
 
 ## Python App Engine Documentation
+
+### 1. Go to https://cloud.google.com/appengine/
+Log in to your Google account or create one if you have not before, then click "go to console."
+
+![Step](Images/beginning.png)
+
+### 2. Create a new project
+Create a new project, choose what name it, and chose what region you want it to be based in.
+
+![Step](Images/name a project.png)
+
+### 3. Create an application
+Here is where I went through the app engine's provided 'hello world' tutorial, chose the language you want (in our case, Python)
+
+(image to be added)
+
+### 4. Go through the tutorial
+Start by cloning Google's github repository for this project and going into the correct repository
+
+(image here of cloining repository)
+
+then go through the steps to get into their 'main' program and modify it slightly to return a random number rather than "hello world"
+
+(image of modified code here)
+
+Run the "testing your app" section of the tutorial shown in the previous image on the command line.
+
+This should get you to the point of a test website displaying a random number
+
+(image of the temp site here)
+
+Deploy your app engine using the commands provided by the tutorial
+
+(image of commands given by tutorial)
+(images of it on the command line)
+
+### 5. Visit your new website!
+At this point, you should be able to visit the website provided to you at the end of the tutorial, congradulations!
+
+
+## Testing code
+inputs: https://sooners.sharepoint.com/sites/TeamGlasses/Shared%20Documents/Experiment/random-timing-test.txt
+
+output:
+(images of outputs here)

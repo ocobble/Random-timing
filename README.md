@@ -9,6 +9,8 @@ as app engine websites may need to start up if they are in an idle state
 
 ## Results Summary
 
+Our tests showed that the java instances were faster than the python ones.
+
 ## Java VM Documentation
 
 ## 1. Create a compute engine instance with the Google Cloud Platform

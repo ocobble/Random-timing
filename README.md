@@ -174,6 +174,8 @@ Log in to your Google account or create one if you have not before, then click "
 ### 2. Create a new project
 Create a new project, choose what name it, and chose what region you want it to be based in.
 
+![Step](Images/make a project)
+
 ![Step](Images/name a project.png)
 
 ### 3. Create an application

@@ -174,9 +174,9 @@ Log in to your Google account or create one if you have not before, then click "
 ### 2. Create a new project
 Create a new project, choose what name it, and chose what region you want it to be based in.
 
-![Step](Images/make a project)
+![Step](Images/make_a_project)
 
-![Step](Images/name a project.png)
+![Step](Images/name_a_project.png)
 
 ### 3. Create an application
 Here is where I went through the app engine's provided 'hello world' tutorial, chose the language you want (in our case, Python)
